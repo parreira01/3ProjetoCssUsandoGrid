@@ -1,0 +1,125 @@
+
+body {
+    background-color: #f9f9f9;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100px repeat(3, 200px) 100px;
+    grid-template-areas:
+        "header header header header header"
+        "nav content-1 content-2 content-3 content-4"
+        "nav content-5 content-6 content-7 content-8"
+        "nav content-9 content-10 content-11 content-12"
+        "nav end end end end";
+}
+
+header, nav, section {
+    padding: 20px;
+}
+
+header {
+    background-color: white;
+    grid-area: header;
+}
+
+.indiceCabecalho {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+nav {
+    margin: 0;
+    background-color:white;
+    grid-area: nav;
+}
+
+ul {
+    margin:10px;
+    padding: 1fr;
+}
+    
+li {
+    list-style: none;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+section {
+    margin: 10px;
+    padding: 80px;
+    text-align: center;
+    font-weight: bold;
+    gap: 10px;
+}   
+
+.content-1{
+    background-color: blue;
+    grid-area: content-1;
+}
+
+.content-2{
+    background-color: lightblue;
+    grid-area: content-2;
+}
+
+.content-3{
+    background-color: yellow;
+    grid-area: content-3;
+}
+
+.content-4{
+    background-color:lightyellow;
+    grid-area: content-4;
+}
+
+.content-5{
+    background-color: tomato;
+    grid-area: content-5;
+}
+
+.content-6{
+    background-color: lightcoral;
+    grid-area: content-6;
+}
+
+.content-7{
+    background-color: red;
+    grid-area: content-7;
+}
+
+.content-8{
+    background-color:orange;
+    grid-area: content-8;
+}
+
+.content-9{
+    background-color: lightsalmon;
+    grid-area: content-9;
+}
+
+.content-10{
+    background-color: salmon;
+    grid-area: content-10;
+}
+
+.content-11{
+    background-color: brown;
+    grid-area: content-11;
+}
+
+.content-12{
+    background-color:aquamarine;
+    grid-area: content-12;
+}
+.end {
+    background-color:#f9f9f9;
+    grid-area: end;
+}
